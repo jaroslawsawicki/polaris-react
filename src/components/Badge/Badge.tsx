@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {classNames, variationName} from '@shopify/react-utilities/styles';
+import Intl from '../../../types/components/AppProvider/utilities/Intl';
 import {withAppProvider, WithAppProviderProps} from '../AppProvider';
 import VisuallyHidden from '../VisuallyHidden';
 import styles from './Badge.scss';
@@ -22,7 +23,8 @@ export interface Props {
   size?: Size;
 }
 
-export type CombinedProps = Props & WithAppProviderProps;
+// export type CombinedProps = Props & WithAppProviderProps;
+export type CombinedProps = Props & {polaris:{intl:Intl}};
 
 export const PROGRESS_LABELS: {[key in Progress]: Progress} = {
   incomplete: 'incomplete',

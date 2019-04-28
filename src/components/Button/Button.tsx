@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {CaretDownMinor} from '@shopify/polaris-icons';
 import {classNames, variationName} from '@shopify/react-utilities';
+import Intl from '../../../types/components/AppProvider/utilities/Intl';
 
 import {withAppProvider, WithAppProviderProps} from '../AppProvider';
 import {handleMouseUpByBlurring} from '../../utilities/focus';
@@ -73,7 +74,8 @@ export interface Props {
   onKeyDown?(event: React.KeyboardEvent<HTMLButtonElement>): void;
 }
 
-export type CombinedProps = Props & WithAppProviderProps;
+// export type CombinedProps = Props & WithAppProviderProps;
+export type CombinedProps = Props & {polaris:{intl:Intl}};
 
 const DEFAULT_SIZE = 'medium';
 
