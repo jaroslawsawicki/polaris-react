@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 import AppProvider from '../../../src/components/AppProvider';
 
@@ -21,5 +20,5 @@ const theme = {
 };
 
 export default function UXPinWrapper({children}) {
-  return <AppProvider theme={theme}>{children}</AppProvider>;
+  return React.createElement(AppProvider, { theme }, children)
 }
