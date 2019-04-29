@@ -2387,10 +2387,10 @@
     "@types/unist" "*"
     "@types/vfile-message" "*"
 
-"@uxpin/merge-cli@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.npmjs.org/@uxpin/merge-cli/-/merge-cli-1.4.0.tgz#766d8fe96ce2d2498cf62e04f6de8c048c8a099f"
-  integrity sha512-tMzRr7aldWpfaujy3vlyg/TwmTU7CWP2n06ENvP7H/sfUt6+9XbCFmcsGDL/YO6WOauoF6xPzdTMsONPgkQJ4A==
+"@uxpin/merge-cli@1.4.1":
+  version "1.4.1"
+  resolved "https://registry.npmjs.org/@uxpin/merge-cli/-/merge-cli-1.4.1.tgz#006401a4c77ce5c5dcc6b2946204cc75ef2e815c"
+  integrity sha512-nw9s23tIyf8+s77JQ/gxcIaz89LGhFeEdorf4JZlCRVP5To3+q1HGVUw4FL+Z9wCskK9K/n8Y9ug5kDSFoGrJA==
   dependencies:
     "@babel/core" "^7.2.2"
     "@babel/plugin-proposal-class-properties" "^7.2.3"
