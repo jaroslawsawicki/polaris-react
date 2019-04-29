@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {classNames, variationName} from '@shopify/react-utilities/styles';
-import Intl from '../../../types/components/AppProvider/utilities/Intl';
-import {withAppProvider, WithAppProviderProps} from '../AppProvider';
+import {withAppProvider} from '../AppProvider';
+import Intl from '../AppProvider/utilities/Intl';
 import VisuallyHidden from '../VisuallyHidden';
 import styles from './Badge.scss';
 
