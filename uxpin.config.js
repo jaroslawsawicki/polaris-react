@@ -3,10 +3,23 @@ module.exports = {
   components: {
     categories: [
       {
-        name: 'General',
+        name: 'Actions',
+        include: [
+          'src/components/Button/Button.tsx',
+        ]
+      },
+      {
+        name: 'Structure',
+        include: [
+          'src/components/Card/Card.tsx',
+          'src/components/Card/components/Header/Header.tsx',
+          'src/components/Card/components/Section/Section.tsx',
+        ]
+      },
+      {
+        name: 'Images and Icons',
         include: [
           'src/components/Badge/Badge.tsx',
-          'src/components/Button/Button.tsx',
         ]
       },
     ]
