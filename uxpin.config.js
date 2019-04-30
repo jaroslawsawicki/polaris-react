@@ -6,6 +6,7 @@ module.exports = {
         name: 'Actions',
         include: [
           'src/components/Button/Button.tsx',
+          'src/components/Link/Link.tsx',
         ]
       },
       {
@@ -19,6 +20,7 @@ module.exports = {
       {
         name: 'Images and Icons',
         include: [
+          'src/components/Avatar/Avatar.tsx',
           'src/components/Badge/Badge.tsx',
         ]
       },
