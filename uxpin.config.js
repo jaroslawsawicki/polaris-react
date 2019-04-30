@@ -32,12 +32,6 @@ module.exports = {
           'src/components/Card/components/Section/Section.tsx',
         ]
       },
-      {
-        name: 'Images and Icons',
-        include: [
-          'src/components/Badge/Badge.tsx',
-        ]
-      },
     ]
   }
 };
