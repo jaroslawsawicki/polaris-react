@@ -195,6 +195,8 @@
     "lodash": "^4.17.4",
     "prop-types": "^15.6.1",
     "react-transition-group": "^2.4.0",
-    "tslib": "^1.9.3"
+    "sass-loader": "^7.1.0",
+    "tslib": "^1.9.3",
+    "url-loader": "^1.1.2"
   }
 }
