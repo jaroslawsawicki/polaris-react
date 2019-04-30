@@ -1,5 +1,5 @@
 import Link from'../Link';
 
 export default (
-  <Link url="https://help.shopify.com/manual">fulfilling orders</Link>
+  <Link uxpId="link-1" url="https://help.shopify.com/manual">fulfilling orders</Link>
 );
