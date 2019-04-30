@@ -24,14 +24,6 @@ module.exports = {
           'src/components/Badge/Badge.tsx',
         ]
       },
-      {
-        name: 'Structure',
-        include: [
-          'src/components/Card/Card.tsx',
-          'src/components/Card/components/Header/Header.tsx',
-          'src/components/Card/components/Section/Section.tsx',
-        ]
-      },
     ]
   }
 };
