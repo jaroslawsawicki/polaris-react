@@ -2,8 +2,9 @@ import * as React from 'react';
 import {isServer} from '@shopify/react-utilities/target';
 import {classNames, variationName} from '@shopify/react-utilities/styles';
 
-import {withAppProvider, WithAppProviderProps} from '../AppProvider';
+import {withAppProvider} from '../AppProvider';
 import Image from '../Image';
+import Intl from '../AppProvider/utilities/Intl';
 
 import styles from './Avatar.scss';
 import * as avatars from './images';
@@ -41,8 +42,12 @@ export interface State {
   prevSource?: string;
 }
 
-export type CombinedProps = Props & WithAppProviderProps;
+// export type CombinedProps = Props & WithAppProviderProps;
+export type CombinedProps = Props & {polaris:{intl:Intl}};
 
+/**
+ * @uxpincomponent
+ */
 export class Avatar extends React.PureComponent<CombinedProps, State> {
   static getDerivedStateFromProps(props: Props, state: State) {
     if (props.source !== state.prevSource) {
