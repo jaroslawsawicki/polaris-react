@@ -2,9 +2,8 @@ import * as React from 'react';
 import {isServer} from '@shopify/react-utilities/target';
 import {classNames, variationName} from '@shopify/react-utilities/styles';
 
-import {withAppProvider} from '../AppProvider';
+import {withAppProvider, WithAppProviderProps} from '../AppProvider';
 import Image from '../Image';
-import Intl from '../AppProvider/utilities/Intl';
 
 import styles from './Avatar.scss';
 import * as avatars from './images';
@@ -42,8 +41,7 @@ export interface State {
   prevSource?: string;
 }
 
-// export type CombinedProps = Props & WithAppProviderProps;
-export type CombinedProps = Props & {polaris:{intl:Intl}};
+export type CombinedProps = Props & WithAppProviderProps;
 
 /**
  * @uxpincomponent

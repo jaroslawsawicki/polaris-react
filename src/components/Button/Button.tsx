@@ -2,9 +2,8 @@ import * as React from 'react';
 import {CaretDownMinor} from '@shopify/polaris-icons';
 import {classNames, variationName} from '@shopify/react-utilities';
 
-import {withAppProvider} from '../AppProvider';
+import {withAppProvider, WithAppProviderProps} from '../AppProvider';
 import {handleMouseUpByBlurring} from '../../utilities/focus';
-import Intl from '../AppProvider/utilities/Intl';
 import UnstyledLink from '../UnstyledLink';
 import Icon, {Props as IconProps} from '../Icon';
 import Spinner from '../Spinner';
@@ -74,8 +73,7 @@ export interface Props {
   onKeyDown?(event: React.KeyboardEvent<HTMLButtonElement>): void;
 }
 
-// export type CombinedProps = Props & WithAppProviderProps;
-export type CombinedProps = Props & {polaris:{intl:Intl}};
+export type CombinedProps = Props & WithAppProviderProps;
 
 const DEFAULT_SIZE = 'medium';
 
