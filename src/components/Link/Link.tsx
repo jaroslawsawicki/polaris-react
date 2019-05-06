@@ -3,10 +3,9 @@ import * as React from 'react';
 import {classNames} from '@shopify/react-utilities';
 import {ExternalSmallMinor} from '@shopify/polaris-icons';
 
-import {withAppProvider} from '../AppProvider';
+import {withAppProvider, WithAppProviderProps} from '../AppProvider';
 import UnstyledLink from '../UnstyledLink';
 import Icon from '../Icon';
-import Intl from '../AppProvider/utilities/Intl';
 
 import styles from './Link.scss';
 
@@ -26,8 +25,7 @@ export interface BaseProps {
 }
 
 export interface Props extends BaseProps {}
-// export type CombinedProps = Props & WithAppProviderProps;
-export type CombinedProps = Props & {polaris:{intl:Intl}};
+export type CombinedProps = Props & WithAppProviderProps;
 
 /**
  * @uxpincomponent
